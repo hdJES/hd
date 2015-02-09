@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Prueba #1</title>
+    <link rel="stylesheet" href="c/jquery.mobile.min.css"/>
+    <script src="j/jquery.min.js" ></script>
+    <script src="j/jquery.mobile.min.js" ></script>
+  </head>
+  <body>
+    <div data-role="page" id="pag1">
+    <div data-role="header" data-postition="fixed">
+      <h1>Autorizacion Matricula<h1>
+    </div>
+    <div role="main">
+    <ul data-role="listview" data-inset="true">
+    <li><a href=#pag2>Alumnos</a></li>
+    <li><a href=#pag3>Tipo de Autorizacion</a></li>
+  </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a class="ui-btn-active" href="#pag1" data-icon="bars"></a>
+          </li>
+          <li>
+            <a href="#pag2" data-icon="gear">Alumnos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div data-role="page" id="pag2">
+      <div data-role="header" data-postition="fixed">
+        <h1>Numero de Cuenta Alumno<h1>
+        </div>
+        <div role="main">
+          <ul data-role="listview" data-filter="true"
+          data-filter-placeholder="Buscar Cuenta" data-autodividers="true">
+            <li><a href> 0801-2015-01231 <p>Fulano 1</p></a></li>
+            <li><a href> 0801-2015-01232 <p>Fulano 2</p> </a></li>
+            <li><a href> 0801-2015-01233 <p>Fulano 3</p></a></li>
+            <li><a href> 0801-2015-01234 <p>Fulano 4</p></a></li>
+            <li><a href> 0801-2015-01235 <p>Fulano 5</p></a></li>
+            <li><a href> 0801-2015-01236 <p>Fulano 6</p></a></li>
+            <li><a href> 0801-2015-01237 <p>Fulano 7</p></a></li>
+            <li><a href> 0801-2015-01238 <p>Fulano 8</p></a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+              <li>
+                <a class="ui-btn-active" href="#pag2" data-icon="bars"></a>
+              </li>
+              <li>
+                <a href="#pag1" data-icon="gear">Principal</a>
+              </li>
+              <li>
+                <a href="#pag3" data-icon="gear">Autorizar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div data-role="page" id="pag3">
+        <div data-role="header" data-postition="fixed">
+          <h1>Tipo de Autorizacion<h1>
+          </div>
+          <div role="main">
+            <ul data-role="listview" data-filter="true">
+              <li><a href="#pag4"> 10 veces o mas Reprobadas las Asignaturas </a></li>
+              <li><a href="#pag4"> 4 veces o mas reprobadas las mismas asiganturas </a></li>
+              <li><a href="#pag4"> Cupo Adicional en Seccion </a></li>
+              <li><a href="#pag4"> Adicional asigantura sin co-requisito de aprobado.</a>
+              </ul>
+          </div>
+           <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+              <ul>
+                <li>
+                  <a class="ui-btn-active" href="#pag3" data-icon="bars"></a>
+                </li>
+                <li>
+                  <a href="#pag1" data-icon="gear">Principal</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div data-role="page" id="pag4">
+          <div data-role="header" data-postition="fixed">
+            <h1> Autorizacion<h1>
+            </div>
+            <div role="main"  data-role="navbar">
+
+                <li><a> #Autorizacion </a></li>
+                <li><a><div data-role="fieldcontain" >
+                <label for="select-choice-1" class="select">Descripcion</label>
+                <select name="select-choice-1" id="select-choice-1">
+                  <option value="1">Limite Excedido</option>
+                  <option value="2">Rechazado por Cupos al 100</option>
+                  <option value="3">No cumple los requisitos</option>
+                  <option value="4">Aprobado</option>
+                </select></div> </a></li>
+                <li><a href="#pag1"><button class="iu-btn">Confirmar</button></a></li>
+
+            </div>
+             <div data-role="footer" data-position="fixed">
+              <div data-role="navbar">
+                <ul>
+                  <li>
+                    <a class="ui-btn-active" href="#pag3" data-icon="bars"></a>
+                  </li>
+                  <li>
+                    <a href="#pag1" data-icon="gear">Principal</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  </body>
+</html>
